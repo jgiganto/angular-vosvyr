@@ -12,8 +12,8 @@ export class ProductDetailsComponent implements OnInit {
     product;
 
   constructor(
-    private route: ActivatedRoute,
-  ) { }
+    private route: ActivatedRoute,     
+  ) { window.alert( route ); }
 
 ngOnInit() {
   this.route.paramMap.subscribe(params => {
